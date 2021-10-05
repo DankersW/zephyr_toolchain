@@ -1,2 +1,3 @@
-# zephyr_toolchain
-Toolchain docker image for building Zephyr applications
+# Zephyr toolchain Docker image
+
+Toolchain docker image for building Zephyr applications.
