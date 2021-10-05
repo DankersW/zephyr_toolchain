@@ -36,4 +36,4 @@ jobs:
           GIT_TAG="${TAG_PATH[2]}"
 
           echo "Building AMD64 and ARM64 for tag $GIT_TAG"
-          docker buildx build -t $DOCKER_ACC/$DOCKER_REPO:$GIT_TAG . --build-arg tag=$GIT_TAG --platform $PLATFORM --push
+          docker buildx build -t $DOCKER_ACC/$DOCKER_REPO:$GIT_TAG -f docker/zephyr_builder.dockerfile . --build-arg tag=$GIT_TAG --platform $PLATFORM --push
