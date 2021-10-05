@@ -2,4 +2,5 @@
 
 Toolchain docker image for building Zephyr applications.
 
-Creating a new docker image is done via manually executing the ```scripts/build_and_push.sh``` script, or by creating a tag on the main branch.
+A new docker image is created via tags in the CI. Triggering the CI is either done in the github GUI by creating a tag with the format `*.*.*` or by creating a tag via the CLI and pushing it upstream.
+
